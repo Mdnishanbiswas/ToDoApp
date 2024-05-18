@@ -1,27 +1,81 @@
-body{
+/* todo.css */
+body {
     background-color: rgb(0, 12, 12);
-    font-family: 'poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* Ensure there is no margin around the body */
 }
-.container{
+
+.container {
     width: 360px;
     padding: 33px;
     text-align: center;
     background-color: white;
-    margin-left: 33%;
+    margin: 5% auto; /* Centering the container */
     margin-top: 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-input{
+
+.inputs {
+    margin-bottom: 20px;
+}
+
+input {
     width: 270px;
     padding: 8px;
     border: 2px solid rgb(6, 145, 145);
     outline: none;
     font-size: 19px;
+    border-radius: 4px;
+    margin: 0; /* Ensure there is no margin around the input */
 }
-button{
+
+button {
     width: 60px;
     height: 41px;
     background-color: rgb(0, 29, 29);
     color: white;
-    border-radius: 2px;
+    border-radius: 4px;
     font-size: 19px;
+    cursor: pointer;
+    border: none; /* Remove any border */
+    margin: 0; /* Ensure there is no margin around the button */
+    vertical-align: top; /* Align button with the input field */
+}
+
+button:hover {
+    background-color: rgb(0, 50, 50);
+}
+
+.text ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: rgb(1, 8, 8);
+    color: white;
+    font-size: 19px;
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.text button {
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.text button:hover {
+    background-color: darkred;
+}
+
+.text ul i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: white;
 }
